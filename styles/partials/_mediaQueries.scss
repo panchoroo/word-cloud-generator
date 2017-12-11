@@ -1,0 +1,24 @@
+/* media queries */ 
+
+@media (max-width: 685px) { 
+    h1 {
+        font-size: 50px;
+        margin-top: 10%;
+    }
+    li.emotion, .btn {
+        font-size: 18px;
+    }
+}
+
+// @media (max-width: 650px) { 
+//     #keywords, #global {
+//         height: 100vh;
+//         width: 95%;
+//     }
+// }
+
+@media (max-height: 425px) { 
+    i.fa.fa-meh-o {
+        display: none;
+    }
+}
