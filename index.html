@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, øinitial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amie Everett Project 4</title>
+    <title>Word Cloud Generator</title>
     <link rel="stylesheet" href="jQCloud/dist/jqcloud.min.css">
     <link rel="stylesheet" href="jQCloud/dist/jqcloud.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster+Two" rel="stylesheet">    <link rel="stylesheet" href="styles/style.css">
-    <!-- Albert Ellis Institute Emotion Chart as inspiration -->
-    <!-- Code and design by Amie Everett © 2017-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster+Two" rel="stylesheet"> <link rel="stylesheet" href="styles/style.css">
+    <!-- Code and design by Amie Everett © 2019-->
 </head>
 <body id="body">
     <main>
         <section class="landingPage">
-            <h1>How are you feeling today?</h1>
+            <h1>Enter your seed word:</h1>
             <ul id="initialEmotions" class="emotions cursor">
                 <li class="emotion happy">happy</li>
-                <li class="emotion sad">sad</li>
-                <li class="emotion angry">angry</li>
-                <li class="emotion ">scared</li>
+                <!-- TODO: add input box for seed word -->
+                <form action="" method="POST" name="textInput" class="textInput" id="textInput">
+                    <label class="textInput" for="emotion">Click another emotion above <br>OR<br> Enter your own below </label>
+                    <input class="textInput" type="text" id="emotion" name="emotion" placeholder="emotion">
+                    <button class="">submit</button>
+                </form>
             </ul>    
             <i class="bigFa fa fa-meh-o" aria-hidden="true"></i>
         </section>
         
         <section class="global hidden">
             <div id="global" ></div>
-            <p>The words in this word cloud are weighted by how many times other users have chosen them</p>
+            <p>The words in this word cloud are weighted by how important they are </p>
+            <!-- TOOD: add weighting system to the list of words -->
         </section>
         
         <section class="cloudAndGif hidden">
             <div class="icon">
-                <div id="iframe">
-                    <iframe src="" height="272" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            
                 <div id="keywords" ></div>
-            
                 <div class="buttons">
-                    <button class="btn newGif">new gif</button>
                     <button class="btn restart">restart</button>
-                    <button class="btn globalButton">global</button>
                 </div>
             </div>
         </section>
     </main>
         
     <footer>
-        <p>Code and design by Amie Everett © 2017
+        <p>Code and design by Amie Everett © 2019
             <a href='https://twitter.com/AmieEverett_' target='_blank'>
                 <i class='fa fa-twitter' aria-hidden='true'></i>
             </a>
