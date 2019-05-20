@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, øinitial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, øinitial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Cloud Generator</title>
     <link rel="stylesheet" href="jQCloud/dist/jqcloud.min.css">
@@ -13,28 +13,25 @@
 <body id="body">
     <main>
         <section class="landingPage">
-            <h1>Enter your seed word:</h1>
-            <ul id="initialEmotions" class="emotions cursor">
-                <li class="emotion happy">happy</li>
-                <!-- TODO: add input box for seed word -->
-                <form action="" method="POST" name="textInput" class="textInput" id="textInput">
-                    <label class="textInput" for="emotion">Click another emotion above <br>OR<br> Enter your own below </label>
-                    <input class="textInput" type="text" id="emotion" name="emotion" placeholder="emotion">
-                    <button class="">submit</button>
-                </form>
-            </ul>    
-            <i class="bigFa fa fa-meh-o" aria-hidden="true"></i>
+            <h1>Enter a seed word:</h1>
+            <!-- <ul id="initialEmotions" class="emotions cursor"> -->
+            <form action="" method="POST" name="textInput" class="textInput" id="textInput">
+                <label class="textInput" for="seedWord">Enter a seed word</label>
+                <input class="textInput" type="text" id="seedWord" name="seedWord" placeholder="any word">
+                <button class="seedWord">Generate synonyms</button>
+            </form>
+            <!-- </ul>     -->
         </section>
         
-        <section class="global hidden">
-            <div id="global" ></div>
+        <section id="listOfWords">
             <p>The words in this word cloud are weighted by how important they are </p>
+            <ol id="wordList"></ol>
             <!-- TOOD: add weighting system to the list of words -->
         </section>
         
-        <section class="cloudAndGif hidden">
+        <section class="cloudAndGif">
             <div class="icon">
-                <div id="keywords" ></div>
+                <div id="keywords"></div>
                 <div class="buttons">
                     <button class="btn restart">restart</button>
                 </div>

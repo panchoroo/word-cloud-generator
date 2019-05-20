@@ -56,12 +56,6 @@ h1 {
     justify-content: center;
 }
 
-.hidden {
-    visibility: hidden;
-    position: absolute;
-    left: -100%;
-}
-
 ul.emotions {
     width: 100%;
     display: flex;
@@ -86,16 +80,6 @@ li.emotion, .btn {
     }
 }
 
-li.sad {
-    padding: 2.3% 6.5%;
-}
-li.angry {
-    padding: 2.3% 5.5%
-}
-li.happy {
-    padding: 2.3% 5.1%
-}
-
 i.bigFa.fa {
     font-size: 25vw;
 }
@@ -106,17 +90,6 @@ a {
 
 .jqcloud-word.w1, .jqcloud-word.w2 {
     font-size: 1.5rem;
-}
-
-iframe {
-    width: 100%;
-    margin-top: 0px;
-    padding: 20px 0;
-}
-
-#iframe{
-    display: flex;
-    justify-content: center;
 }
 
 .icon{
